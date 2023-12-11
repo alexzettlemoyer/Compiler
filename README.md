@@ -64,6 +64,7 @@ This will
 2. compile the BranchTracer.cpp LLVM custom LLVM transform pass
 3. transform the generated LLVM IR using the branch tracer
 - this will output the static branch dictionary of all branches in the program, and their start and target lines
+- if you want this output to print in a separate file, create a directory `output`
 4. run the transformed file
 - this will output the value of function pointers when they are invoked
 - and the executed branches (from the branch dictionary)
