@@ -29,9 +29,9 @@ TESTING FILES:
 
 * 2 contrived C programs
     - automaton.c
-        - to run the profiler on this program use `./branch_tracer.sh tests/automaton.c`
+        - to run the profiler on this program use `./start.sh tests/automaton.c`
     - binrep.c
-        - to run the profiler on this program use `./branch_tracer.sh tests/binrep.c`
+        - to run the profiler on this program use `./start.sh tests/binrep.c`
 
 * real-world substitute to SPEC CPU: driver.c
     - driver.c is part of a C program implemented in CSC230
@@ -47,7 +47,7 @@ TESTING FILES:
         - `size`:             get the current size of the map           (ex: size)
         - `display`:          displays the current map                  (ex: display)
         - `quit`:             quit the command prompt                   (ex: quit)
-    - to run the profiler on this program use `./branch_tracer.sh tests/driver.c`
+    - to run the profiler on this program use `./start.sh tests/driver.c`
 
 
 _______
