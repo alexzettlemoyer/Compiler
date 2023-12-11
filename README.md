@@ -22,14 +22,16 @@ To run the profiling tool, LLVM must be installed and built.
     - `sudo apt install valgrind`
 
 ***** the LLVM build must be in a directory titled `build` in the project directory.
-this directory should be in the topmost level of the directory, adjacent to Part1/, Part2/, tests/, output/, etc..
+This directory should be in the topmost level of the directory, adjacent to Part1/, Part2/, tests/, output/, etc..
 
 _______
 TESTING FILES:
 
-* 2 small C programs
+* 2 contrived C programs
     - automaton.c
+        - to run the profiler on this program use `./branch_tracer.sh tests/automaton.c`
     - binrep.c
+        - to run the profiler on this program use `./branch_tracer.sh tests/binrep.c`
 
 * real-world substitute to SPEC CPU: driver.c
     - driver.c is part of a C program implemented in CSC230
@@ -39,11 +41,13 @@ TESTING FILES:
     - the source file has 527 lines of non-comment, non-blank source code lines
         - use `cat tests/driver.c | sed '/^\s*$/d' | wc -l` to see the number
     - usage:
-        - `set key value`: store a new key-value pair in the map
-        - `get key`:          get the value of a key
-        - `remove key`:       remove a key-value pair from the map
-        - `size`:             get the current size of the map
-        - `quit`:             quit the command prompt
+        - `set key value`:    store a new key-value pair in the map     (ex: set 4 6)
+        - `get key`:          get the value of a key                    (ex: get 4)
+        - `remove key`:       remove a key-value pair from the map      (ex: remove 4)
+        - `size`:             get the current size of the map           (ex: size)
+        - `display`:          displays the current map                  (ex: display)
+        - `quit`:             quit the command prompt                   (ex: quit)
+    - to run the profiler on this program use `./branch_tracer.sh tests/driver.c`
 
 
 _______
