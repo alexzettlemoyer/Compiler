@@ -1,0 +1,28 @@
+# Ignore build artifacts
+build/
+dist/
+bin/
+*.egg-info/
+llvm/
+
+# Ignore virtual environment
+venv/
+env/
+
+# Ignore local configuration
+*.env
+*.pyc
+*.pyo
+*.envrc
+
+# Ignore logs and databases
+*.log
+*.sqlite3
+*.db
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+*.o
+
+.vscode/*
