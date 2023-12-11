@@ -74,3 +74,26 @@ This will
 - and the program output, which may require user input
 
 
+_______
+PART 2:
+
+Run the script inputFeatureDetector.sh for the analysis tool
+    `usage: ./inputFeatureDetector.sh <path_to_input_C_file>`
+
+for example, to run the profiling tool on example.c in the test directory:
+    `./inputFeatureDetector.sh tests/example.c`
+
+This will
+1. generate the LLVM IR for the input C file
+2. compile the InputFeatureDetector.cpp LLVM custom LLVM transform pass
+3. transform the generated LLVM IR using the branch tracer
+- this will statically analyze the input file for key points
+
+
+_______
+PART 3:
+Run the script start.sh for the tool to run cohesively
+    `usage: ./start.sh <path_to_input_C_file>`
+
+for example, to run the profiling and analysis tool on example.c in the test directory:
+    `./start.sh tests/example.c`
